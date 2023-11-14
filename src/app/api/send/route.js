@@ -1,9 +1,9 @@
-// import { EmailTemplate } from '../../../components/EmailTemplate';
+ // import { EmailTemplate } from '../../../components/EmailTemplate';
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend("re_8xwopZDm_jcza7t9ABRyvTQXuxtKfEdCQ");
-const fromEmail = "ciromos27@gmail.com";
+const resend = new Resend('re_HgZvoZUS_3nztpLg5aWpqKZoEUfWew9Ag');
+const fromEmail = 'onboarding@resend.dev'
 
 export async function POST(req, res) {
   const { email, subject, message } = await req.json();
@@ -11,13 +11,13 @@ export async function POST(req, res) {
   try {
     const data = await resend.emails.send({
       from: fromEmail,
-      to: [fromEmail, email],
+      to: ['ciro.moscarella@icloud.com', email],
       subject: subject,
       react: (
         <>
           <h1>{subject}</h1>
-          <p>Thank you for contacting us!</p>
-          <p>New message submitted:</p>
+          <p>Grazie per avermi contattato</p>
+          <p>Mi hai scritto:</p>
           <p>{message}</p>
         </>
       ),

@@ -31,7 +31,11 @@ const EmailSection = () => {
     };
 
     const response = await fetch(endpoint, options);
+    if (!response.ok) {
+      throw new Error(`Errore nella richiesta: ${response.status}`);
+    }
     const resData = await response.json();
+    console.log(resData)
 
     if (response.status === 200) {
       console.log("Message sent.");
