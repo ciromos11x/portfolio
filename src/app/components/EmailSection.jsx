@@ -27,7 +27,7 @@ const EmailSection = () => {
         "Content-Type": "application/json",
       },
       // Body of the request is the JSON data we created above.
-      body: JSONdata.stringify(data),
+      body: JSONdata,
     };
 
     const response = await fetch(endpoint, options);
