@@ -1,5 +1,4 @@
-"use client"
-import 'resend/build/src/index.js';
+
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
