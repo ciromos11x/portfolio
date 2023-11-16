@@ -1,6 +1,5 @@
 "use client"
 import 'resend/build/src/index';
-import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
 const resend = new Resend('re_HgZvoZUS_3nztpLg5aWpqKZoEUfWew9Ag');
