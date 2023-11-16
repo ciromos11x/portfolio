@@ -1,11 +1,12 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import * as ReactDOMServer from 'react-dom/server';
 
-
+var ReactDOMServer = require('react-dom/server');
 const resend = new Resend('re_HgZvoZUS_3nztpLg5aWpqKZoEUfWew9Ag');
 const fromEmail = 'onboarding@resend.dev'
 
-export async function POST() {
+export async function POST(req,res) {
   const { email, subject, message } = await req.json();
   console.log(email, subject, message);
   try {
