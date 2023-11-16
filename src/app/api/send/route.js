@@ -1,4 +1,5 @@
-
+"use client"
+import 'resend/build/src/index';
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
