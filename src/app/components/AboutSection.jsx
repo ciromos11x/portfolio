@@ -57,7 +57,7 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
           Sono un professionista esperto nel campo dello sviluppo web, con competenze avanzate nelle seguenti tecnologie:
           HTML, CSS , JAVASCRIPT , REACT.JS , NODE & EXPRESS.</p>
-          <p className="text-base lg:text-lg">Il mio impegno per l`&apos;`apprendimento continuo e la mia passione per la creazione di soluzioni tecnologiche innovative mi rendono  versatile e pronto a contribuire in modo significativo a progetti ambiziosi.
+          <p className="text-base lg:text-lg">Il mio impegno per l&apos;apprendimento continuo e la mia passione per la creazione di soluzioni tecnologiche innovative mi rendono  versatile e pronto a contribuire in modo significativo a progetti ambiziosi.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
