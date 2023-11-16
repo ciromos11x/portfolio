@@ -1,21 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
 
-const DownloadButton = () => {
+const DownloadButton = ({ fileUrl, fileName }) => {
+  const fileUrl = '/public/curriculum.pdf';
+  const fileName = 'cvciro'
   const handleDownload = () => {
-    const fileUrl = '/public/curriculum.pdf'; // Percorso del file nella cartella public
+    // Crea un elemento <a> e imposta gli attributi
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileName;
 
-    // Creare un link di download
-    const downloadLink = document.createElement('a');
-    downloadLink.href = fileUrl;
-    downloadLink.download = 'ciro-cv.pdf'; // Nome del file durante il download
+    // Aggiungi l'elemento al documento
+    document.body.appendChild(link);
 
-    // Simulare un clic sul link per avviare il download
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
+    // Simula un clic sull'elemento per avviare il download
+    link.click();
+
+    // Rimuovi l'elemento dal documento dopo il download
+    document.body.removeChild(link);
   };
-
   return (
     <button
               type="button" 
