@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const DownloadButton = () => {
   const handleDownload = () => {
-    const fileUrl = '/ciro-porto/public/curriculum.pdf'; // Percorso del file nella cartella public
+    const fileUrl = '/ciro-porto/public/cv.PNG'; // Percorso del file nella cartella public
 
     // Creare un link di download
     const downloadLink = document.createElement('a');
