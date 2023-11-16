@@ -4,6 +4,8 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Button } from "@react-email/components";
+import DownloadButton from './DownloadButton'
 
 const HeroSection = () => {
   return (
@@ -33,10 +35,8 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          Sono uno sviluppatore web appassionato con competenze avanzate in HTML, CSS e JavaScript, focalizzato sulla creazione di esperienze utente coinvolgenti e intuitive. La mia esperienza si estende anche all`&apos;`utilizzo di Node.js e Express per lo sviluppo di applicazioni server-side robuste e scalabili.
+          Sono uno sviluppatore web appassionato con competenze avanzate in HTML, CSS e JavaScript, focalizzato sulla creazione di esperienze utente coinvolgenti e intuitive. La mia esperienza si estende anche all'utilizzo di Node.js e Express per lo sviluppo di applicazioni server-side robuste e scalabili. Sono sempre alla ricerca di nuovi modi per migliorare la qualità e le prestazioni del codice, contribuendo così al successo dei progetti.
 </p>
-<p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">La mia passione per la tecnologia si traduce in un approccio proattivo nell`&apos;`adottare le ultime tendenze e metodologie di sviluppo. Sono sempre alla ricerca di nuovi modi per migliorare la qualità e le prestazioni del codice, contribuendo così al successo dei progetti.
-          </p>
           <div>
             <Link
               href="/contact"
@@ -44,14 +44,7 @@ const HeroSection = () => {
             >
               Contattami
             </Link>
-            <Link
-              href="/"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
-            >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
-              </span>
-            </Link>
+            <DownloadButton></DownloadButton>
           </div>
         </motion.div>
         <motion.div
@@ -60,13 +53,13 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full bg-gradient-to-r from-primary-400 via-yellow-200 to-secondary-600 w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
             <Image
               src="/images/utility/Untitledciroavatar.png"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              width={250}
+              height={250}
             />
           </div>
         </motion.div>
