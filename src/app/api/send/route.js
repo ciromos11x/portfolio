@@ -2,8 +2,7 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-export const runtime = 'edge';
-export const dynamic = 'force-dynamic';
+
 
 const resend = new Resend('re_HgZvoZUS_3nztpLg5aWpqKZoEUfWew9Ag');
 const fromEmail = 'onboarding@resend.dev'
