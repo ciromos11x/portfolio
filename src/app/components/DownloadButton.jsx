@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const DownloadButton = ( ) => {
   const fileUrl = '/public/curriculum.pdf';
-  const fileName = 'cvciro'
+  const fileName = 'curriculum.pdf'
 
   const handleDownload = () => {
     // Crea un elemento <a> e imposta gli attributi
