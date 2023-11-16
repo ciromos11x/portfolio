@@ -35,7 +35,8 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          aa</p>
+          Sono uno sviluppatore web appassionato con competenze avanzate in HTML, CSS e JavaScript, focalizzato sulla creazione di esperienze utente coinvolgenti e intuitive. La mia esperienza si estende anche all &apos; utilizzo di Node.js e Express per lo sviluppo di applicazioni server-side robuste e scalabili. Sono sempre alla ricerca di nuovi modi per migliorare la qualità e le prestazioni del codice, contribuendo così al successo dei progetti.
+</p>
           <div>
             <Link
               href="/contact"
