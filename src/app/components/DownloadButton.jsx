@@ -1,9 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
 
-const DownloadButton = ({ fileUrl, fileName }) => {
+const DownloadButton = ( ) => {
   const fileUrl = '/public/curriculum.pdf';
   const fileName = 'cvciro'
+
   const handleDownload = () => {
     // Crea un elemento <a> e imposta gli attributi
     const link = document.createElement('a');
