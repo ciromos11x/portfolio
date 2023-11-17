@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const DownloadButton = ( ) => {
-  const fileUrl = '/public/cv.PNG';
+  const fileUrl = '/cv.PNG';
   const fileName = 'curriculum'
 
   const handleDownload = () => {
