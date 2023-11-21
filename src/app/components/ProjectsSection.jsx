@@ -7,9 +7,9 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "NextJs Sito Lerca",
-    description: "Sito per l'azienda in cui ho lavorato. *da finire",
-    image: "/images/projects/sito-lerca.png",
+    title: "Progetto Azienda",
+    description: "Sviluppato con NextJs e Tailwind. Sito per un azienda della mia città. *Da finire",
+    image: "/public/images/projects/sito-lerca.PNG",
     tag: ["Tutti", "Web"],
     gitUrl: "https://github.com/ciromos11x/lerca",
     previewUrl: "https://lerca.vercel.app/",
