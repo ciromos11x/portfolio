@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "Progetto Azienda",
     description: "Sviluppato con NextJs e Tailwind. Sito per un azienda della mia città. *Da finire",
-    image: "/public/images/projects/sito-lerca.PNG",
+    image: "/images/projects/sito-lerca.PNG",
     tag: ["Tutti", "Web"],
     gitUrl: "https://github.com/ciromos11x/lerca",
     previewUrl: "https://lerca.vercel.app/",
